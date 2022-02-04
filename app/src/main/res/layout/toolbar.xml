@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:background="@color/white"
+    android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="40sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="false"
+            android:padding="10dp"
+            android:src="@drawable/ic_sort"/>
+
+    </LinearLayout>
+
+
+
+
+</androidx.appcompat.widget.Toolbar>
